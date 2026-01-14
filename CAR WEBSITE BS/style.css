@@ -1,0 +1,265 @@
+
+/* GLOBAL */
+body {
+  background-color: #161e54;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* GLASS NAVBAR */
+.glass-nav {
+  background: rgba(22, 30, 84, 0.6);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+/* NAV LINKS */
+.navbar-nav .nav-link {
+  position: relative;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f9b233;
+}
+
+/* DROPDOWN */
+.dropdown-dark {
+  background-color: #1f2a6b;
+  border-radius: 10px;
+}
+
+.dropdown-dark .dropdown-item {
+  color: white;
+}
+
+.dropdown-dark .dropdown-item:hover {
+  background-color: #f9b233;
+  color: #161e54;
+}
+
+/* CAROUSEL  */
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-caption {
+  bottom: 40%;
+}
+
+.carousel-caption h1 {
+  font-size: 7rem;
+  text-shadow: 2px 2px black;
+  text-transform: uppercase;
+}
+
+.carousel-caption p {
+  font-size: 2rem;
+  text-shadow: 2px 2px black;
+}
+
+/* CARDS */
+.brand-card,
+.service-card {
+  background-color: #1f2a6b;
+  border-radius: 15px;
+  transition: 0.4s;
+  
+}
+
+.brand-card img {
+  max-height: 90px;
+  object-fit: contain;
+}
+
+
+.brand-card:hover,
+.service-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-body h5{
+    font-size: 2rem;
+    color: white;
+}
+
+.card-body p{
+    color: white;
+}
+
+.btn-warning {
+  background-color: #f9b233;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-warning:hover {
+  background-color: white;
+  color: #161e54;
+}
+
+
+
+/* CAR CARD */
+.cars{
+    margin-top: 6%;
+}
+.head{
+    background-color: #F9B233;
+    margin-bottom:2% ;
+    border-radius: 10px;
+}
+
+.car-card {
+  background-color: #1F2A6B;
+  color: white;
+  border-radius: 15px;
+  padding: 12px;
+  /* margin-top: 6%; */
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;   
+}
+
+.car-card img {
+  width: 100%;
+  height: 180px;               
+  object-fit: cover;          
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.car-card h5 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.car-card p {
+  font-size: 14px;
+  color: #c7c9e2;
+}
+
+.car-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+.car-card:hover img {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+/* FOOTER */
+.lux-footer {
+  background-color: #0D133D;
+  color: #c7c9e2;
+}
+
+.footer-title {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list a {
+  color: #c7c9e2;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-list a:hover {
+  color: #F9B233;
+  padding-left: 5px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #1F2A6B;
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: #F9B233;
+  color: #161E54;
+  transform: translateY(-5px);
+}
+
+
+@media (max-width: 992px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+
+   .carousel-caption {
+    bottom: 30%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 3rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 55vh;
+  }
+
+   .carousel-caption {
+    bottom: 25%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+    .brand-card {
+    padding: 10px;
+  }
+
+  .brand-card img {
+    max-height: 70px;
+  }
+
+  .brand-card .btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+}

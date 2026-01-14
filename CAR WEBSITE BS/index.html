@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAR</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+     rel="stylesheet"
+     />
+     <link rel="shortcut icon" href="Assets/logo (2).png" type="image/x-icon">
+
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">LEGACY</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Cars
+              </a>
+              <ul class="dropdown-menu dropdown-dark">
+                <li><a class="dropdown-item" href="#">Luxury Cars</a></li>
+                <li><a class="dropdown-item" href="#">Sport Cars</a></li>
+                <li><a class="dropdown-item" href="#">SUV Cars</a></li>
+                <li><a class="dropdown-item" href="#">Offroad Cars</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/2026-rolls-royce-phantom-pr-123-690cd211484fb.jpg"
+            class="d-block w-100 img-fluid"
+          />
+          <div class="carousel-caption text-center">
+            <h1>Rolls Royce</h1>
+            <p>Luxury Redefined</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/all-models/m-automobile/m5-limousine/2024/bmw-m5-posi-disclaimer-ig-01-16x9.jpg"
+            class="d-block w-100 img-fluid"
+          />
+          <div class="carousel-caption text-center">
+            <h1>BMW M5</h1>
+            <p>Performance Beast</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/2026-land-rover-defender-pr-101-683dc8a7ead58.jpg"
+            class="d-block w-100 img-fluid"
+          />
+          <div class="carousel-caption text-center">
+            <h1>Defender</h1>
+            <p>Built for Offroad</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRAND CARDS -->
+    <h1 class="text-center mt-4">Brands</h1>
+    <section class="container my-5">
+      <div class="row g-4 text-center justify-content-center">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="card brand-card">
+            <img src="Assets/mercedes.png" class="card-img-top p-3 img-fluid" />
+            <button class="btn btn-warning mt-3">View Cars</button>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="card brand-card">
+            <img src="Assets/rr.png" class="card-img-top p-3 rr img-fluid" />
+            <button class="btn btn-warning mt-3">View Cars</button>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="card brand-card">
+            <img src="Assets/bentely.png" class="card-img-top p-3 img-fluid" />
+            <button class="btn btn-warning mt-3">View Cars</button>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="card brand-card">
+            <img src="Assets/bmw.png" class="card-img-top p-3 img-fluid" />
+            <button class="btn btn-warning mt-3">View Cars</button>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="card brand-card">
+            <img src="Assets/mahi.png" class="card-img-top p-3 img-fluid" />
+            <button class="btn btn-warning mt-3">View Cars</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAR CATEGORIES -->
+    <section class="container cars">
+      <h3 class="text-center head">Luxury Cars</h3>
+      <div class="row g-4 mb-4">
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://i.cdn.newsbytesapp.com/images/l35520241026125003.jpeg"
+            />
+            <h5>Rolls Royce</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, est.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://mycarheaven.com/wp-content/uploads/2020/06/mulsanne-speed-2017-uk0589.jpg"
+            />
+            <h5>Bentely</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
+              optio!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Land-Rover/Range-Rover/11540/1719037980777/front-left-side-47.jpg?impolicy=resize&imwidth=360"
+            />
+            <h5>Range Rover</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
+              quia?
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://images.livemint.com/img/2021/07/29/original/GT_05484.JPG_1627581440621.jpg"
+            />
+            <h5>Mercedes</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+              possimus?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-center head">Sport Cars</h3>
+      <div class="row g-4 mb-4">
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://static.foxdealer.com/686/2021/03/2019_Dodge_Challenger_-_Exterior_Side_View.jpg"
+            />
+            <h5>Dodge Challenger</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+              officiis!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://static-cdn.cars24.com/prod/new-car-cms/Ferrari/SF90-Stradale/2024/03/27/1015a7d1-4beb-47c4-bb24-8a75dea7cbeb-Ferrari_SF90-Stradale_Feature-Image.png"
+            />
+            <h5>Ferrari</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Obcaecati, sunt?
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ijsxlvQB.bu8/v0/-1x-1.webp"
+            />
+            <h5>Porche</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              eum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://cdn.arstechnica.net/wp-content/uploads/2021/07/2021-Bugatti-Chiron-Pur-Sport-1-scaled.jpg"
+            />
+            <h5>Bugatti Chiron</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+              labore.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-center head">SUV Cars</h3>
+      <div class="row g-4 mb-4">
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://www.mercedes-benz.co.in/content/dam/india/passengercars/models/suvrange/mercedes-maybach-gls-x167-stage-3840x1707-09-2022.jpg/1740065262677.jpg?im=Crop,rect=(1473,0,1707,1707);Resize=(828,828)"
+            />
+            <h5>Mercedes Benz</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Obcaecati, qui?
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://hips.hearstapps.com/hmg-prod/images/2020-kar-tunz-lamborghini-urus-112-1584591171.jpg?crop=0.815xw:0.816xh;0.0950xw,0.130xh&resize=640:*"
+            />
+            <h5>Urus</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+              id?
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://titaniummahindra.com/wp-content/uploads/2025/02/Client_Fold-2.1-new-img-1.png"
+            />
+            <h5>BE 6</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatibus, modi.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://media.wired.com/photos/595480998e8cc150fa8ec1b6/3:2/w_2560%2Cc_limit/2-Front-Three-Quarter-Static-1.jpg"
+            />
+            <h5>Bentagya</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+              libero.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-center head">Offroad Cars</h3>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://spn-sta.spinny.com/blog/20220228135341/Mahindra-Thar-header.jpg"
+            />
+            <h5>Thar 4x4</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+              repudiandae.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://gaadiwaadi.com/wp-content/uploads/2025/05/Defender-Octa-2.jpg"
+            />
+            <h5>Defender</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ad.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Jimny/6182/1686117643111/exterior-image-168.jpg?tr=w-360"
+            />
+            <h5>Jimny</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+              fugiat.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card car-card">
+            <img
+              class="img-fluid"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6VoaMVKGQUS5FDj1t15ev0ijs0Zi5vRrPBQ&s"
+            />
+            <h5>Fortuner</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse,
+              impedit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="lux-footer mt-5">
+      <div class="container py-5">
+        <div class="row g-4">
+
+          <div class="col-md-4">
+            <h5 class="footer-title">LEGACY Car Rental</h5>
+            <p class="footer-text">
+              Premium luxury, sport, SUV & offroad cars. Experience performance,
+              comfort & class together.
+            </p>
+          </div>
+
+          <div class="col-md-2">
+            <h5 class="footer-title">Services</h5>
+            <ul class="footer-list">
+              <li><a href="#">Car Finance</a></li>
+              <li><a href="#">Car Service</a></li>
+              <li><a href="#">Test Drive</a></li>
+              <li><a href="#">Insurance</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="footer-title">Contact</h5>
+            <p class="footer-text mb-2">📍 Bhavnagar, India</p>
+            <p class="footer-text mb-2">📞 +91 9099099099</p>
+            <p class="footer-text mb-3">✉️ info@legacy.com</p>
+
+            <div class="footer-social">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
